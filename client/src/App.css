@@ -1,0 +1,237 @@
+/* Container for the list of profiles */
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+/* Individual profile card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color:#DCDCDC;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Profile photo */
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Profile information */
+.profile-info {
+  flex-grow: 1;
+}
+
+/* Profile name */
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Profile location and position */
+.profile-info p {
+  margin: 4px 0;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Hover effect for profile cards */
+.profile-card:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Styles */
+
+/* Mobile devices (below 576px) */
+@media (max-width: 400PX) {
+  .profile-list {
+    padding: 10px;
+  }
+
+  .profile-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    width: 500px;
+    gap: 20px;
+    overflow-y: hidden;
+  
+  }
+
+  .profile-photo {
+    width: 90px;
+    height: 90px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile-info p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (576px to 767px) */
+@media (min-width: 400px) and (max-width: 767px) {
+  .profile-card {
+    width: 600px;
+    padding: 12px;
+    gap: 30px;
+  }
+
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+  }
+
+  .profile-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .profile-info p {
+    font-size: 1rem;
+  }
+}
+
+/* Laptops (768px to 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .profile-card {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
+    width: 1000px;
+    padding: 18px;
+    margin: 15px 0;
+  }
+
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    margin-right: 22px;
+  }
+
+  .profile-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktops (1200px and above) */
+@media (min-width: 1200px) {
+  .profile-card {
+    width: 1250px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    
+  }
+  
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+  }
+
+  }
+
+  .profile-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .profile-info p {
+    font-size: 1.2rem;
+
+  }
+/* //search bar */
+  /* Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Input Field */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Search Button */
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-container {
+      flex-direction: row;
+  }
+
+  .search-input {
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+
+  .search-button {
+      border-radius: 5px;
+     
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .search-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
